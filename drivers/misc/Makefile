@@ -68,3 +68,5 @@ obj-$(CONFIG_QSEECOM_PROXY) 	+= qseecom_proxy.o
 #ifdef OPLUS_FEATURE_CHG_BASIC
 obj-$(CONFIG_HAPTIC_FEEDBACK) += aw8697_haptic/
 #endif
+
+obj-y	+= tri_state_key/
