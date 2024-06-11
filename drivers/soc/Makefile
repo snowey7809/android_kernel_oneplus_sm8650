@@ -34,6 +34,8 @@ obj-$(CONFIG_ARCH_U8500)	+= ux500/
 obj-$(CONFIG_PLAT_VERSATILE)	+= versatile/
 obj-y				+= xilinx/
 
+obj-y                           += oplus/sensor/
+
 #ifdef OPLUS_FEATURE_MM_FEEDBACK
 obj-$(CONFIG_OPLUS_FEATURE_MM_FEEDBACK)	+= oplus/multimedia/
 #endif /* OPLUS_FEATURE_MM_FEEDBACK */
@@ -51,3 +53,7 @@ obj-$(CONFIG_OPLUS_FEATURE_RECORD_MDMRST)     += oplus/mdmrst/
 #endif /*OPLUS_FEATURE_MODEM_MINIDUMP*/
 
 obj-y += oplus/dft/
+
+#ifdef CONFIG_OPLUS_SENSOR_CONSUMER_IR
+obj-$(CONFIG_OPLUS_SENSOR_CONSUMER_IR_CORE) += oplus/oplus_consumer_ir/
+#endif /* CONFIG_OPLUS_SENSOR_CONSUMER_IR */
