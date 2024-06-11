@@ -51,5 +51,3 @@ obj-$(CONFIG_OPLUS_FEATURE_RECORD_MDMRST)     += oplus/mdmrst/
 #endif /*OPLUS_FEATURE_MODEM_MINIDUMP*/
 
 obj-y += oplus/dft/
-
-obj-y     += oplus/storage/

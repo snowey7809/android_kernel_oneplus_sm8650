@@ -49,5 +49,3 @@ source "drivers/soc/oplus/device_info/Kconfig"
 #ifdef OPLUS_FEATURE_DFT
 source "drivers/soc/oplus/dft/Kconfig"
 #endif /* OPLUS_FEATURE_DFT */
-
-source "drivers/soc/oplus/storage/Kconfig"
