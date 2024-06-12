@@ -6850,6 +6850,7 @@ static int dwc3_otg_start_host(struct dwc3_msm *mdwc, int on)
 {
 	int ret = 0;
 	struct dwc3 *dwc = platform_get_drvdata(mdwc->dwc3);
+	u32 reg;
 #ifdef OPLUS_FEATURE_CHG_BASIC
 	u32 val;
 #endif
