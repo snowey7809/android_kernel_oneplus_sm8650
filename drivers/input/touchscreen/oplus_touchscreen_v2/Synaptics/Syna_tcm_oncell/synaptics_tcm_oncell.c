@@ -6502,7 +6502,7 @@ static void syna_tcm_tp_shutdown(struct i2c_client *client)
 	tp_shutdown(ts);
 }
 
-static int syna_tcm_remove(struct i2c_client *client)
+static void syna_tcm_remove(struct i2c_client *client)
 {
 	struct touchpanel_data *ts = i2c_get_clientdata(client);
 	struct syna_tcm_data *tcm_info = (struct syna_tcm_data *)ts->chip_data;
@@ -6526,7 +6526,6 @@ static int syna_tcm_remove(struct i2c_client *client)
 	tp_kfree((void **)&tcm_info);
 	i2c_set_clientdata(client, NULL);
 
-	return 0;
 }
 
 static int syna_i2c_suspend(struct device *dev)
