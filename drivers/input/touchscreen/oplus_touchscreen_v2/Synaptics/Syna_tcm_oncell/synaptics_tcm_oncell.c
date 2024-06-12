@@ -5853,8 +5853,7 @@ static int syna_specific_resume_operate(void *chip_data,
 
 	tcm_info->suspend_state = p->suspend_state;
 	tcm_info->in_test_process = p->in_test_process;
-	TPD_INFO("enter state : %d,in_test_process:%d\n", __func__, p->suspend_state,
-		 p->in_test_process);
+	TPD_INFO("enter state :%s, in_test_process:%d\n", __func__, p->in_test_process);
 
 	timed_out = wait_for_completion_timeout(&tcm_info->resume_complete,
 						0.5 * HZ);
