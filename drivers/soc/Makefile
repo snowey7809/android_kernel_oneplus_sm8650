@@ -54,6 +54,10 @@ obj-$(CONFIG_OPLUS_FEATURE_RECORD_MDMRST)     += oplus/mdmrst/
 
 obj-y += oplus/dft/
 
+#ifdef OPLUS_FEATURE_DFR
+obj-y += oplus/dfr/
+#endif /* OPLUS_FEATURE_DFR */
+
 #ifdef CONFIG_OPLUS_SENSOR_CONSUMER_IR
 obj-$(CONFIG_OPLUS_SENSOR_CONSUMER_IR_CORE) += oplus/oplus_consumer_ir/
 #endif /* CONFIG_OPLUS_SENSOR_CONSUMER_IR */
