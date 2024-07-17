@@ -21,7 +21,6 @@ def define_pineapple():
         "drivers/clk/qcom/clk-rpmh.ko",
         "drivers/clk/qcom/debugcc-cliffs.ko",
         "drivers/clk/qcom/debugcc-pineapple.ko",
-        "drivers/clk/qcom/debugcc-volcano.ko",
         "drivers/clk/qcom/dispcc-pineapple.ko",
         "drivers/clk/qcom/dispcc-volcano.ko",
         "drivers/clk/qcom/gcc-cliffs.ko",
